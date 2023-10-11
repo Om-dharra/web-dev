@@ -1,0 +1,55 @@
+
+.quote{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: bisque; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+h3{
+    font-size: 18px;
+    margin-top: 8px;
+
+}
+h3::before{
+    content: '~';
+}
+
+.quote p{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.quote button{
+    padding: 17px 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+
+}
+.quote button:hover{
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+
+}
+.quote button:active{
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+
+}
